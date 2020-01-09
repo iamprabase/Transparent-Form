@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url(back.jpg);
+    background-color: rgba(0,0,0,0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.my-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 350px;
+    width: 280px;
+    padding:40px;
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.6);
+    box-sizing: current-box;
+    box-shadow: 15px 5px 30px rgba(0,0,0,0.6);
+    border-radius: 10px;
+}
+
+/* .my-box{ */
+    /* -webkit-animation: mymove 2s infinite; */
+     /* Safari 4.0 - 8.0 */
+  /* animation: mymove 2s infinite; */
+/* } */
+
+.my-box:hover{
+    animation-play-state: paused;
+  }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+50% {height: 380px;}
+}
+
+@keyframes mymove {
+50% {height: 380px;}
+}
+
+.form-body{
+    margin-top: 50px;
+}
+
+.input-box{
+    margin-bottom: 12px;
+}
+
+.input-box label{
+    position: absolute;
+    display: inline;
+    font-size: 15px;
+    transition: .5s;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-box input[type=text], input[type=password]{
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: orangered;
+    position: relative;
+    top: -15px;
+}
+
+.input-box input:focus ~ label{
+    font-size: 12px;
+    color: transparent;
+}
+
+input[type="checkbox"]{
+    margin: 10px;
+    font-size: 12px;
+}
+
+.btn{
+    color: white;
+    background: #912020;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    border-radius: 40px;
+    outline: none;
+}
+
+.btn:hover{
+    background: rgb(255,140,0);
+    z-index: -1;
+    cursor: pointer;
+}
+
+.forgot-password{
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.forgot-password a{
+    color: white;
+}
